@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Hostel Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="logo"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Login</a>
+                    <div class="dropdown-content">
+                        <a href="Loginfinal.html">Student Login</a>
+                        <a href="Loginfinal.html">Administration Login</a>
+                    </div>
+                </li>
+                <li><a href="#div3">About Us</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="right">
+        <div class="logo-block"></div>
+        <div class="info">
+            <div>
+                <h1>Welcome</h1>
+            </div>
+            <p id="welcometext">“Welcome to our Yuva Hostel! We provide a comfortable and friendly environment for
+                students alike. Our hostel is designed to foster community, support learning, and offer a
+                variety of facilities to make your stay enjoyable. Join us for a unique experience filled with
+                opportunities to connect, learn, and grow!”</p>
+        </div>
+    </div>
+
+    <div id="div3" class="scroll-animate">Facilities of the Hostel</div>
+    <div id="main" class="scroll-animate">
+        <div id="tex" class="scroll-animate-fade-in-left">
+            <p id="feh">Our Facilities</p>
+            <ul id="ll">
+                <li class="fe">24/7 Security</li>
+                <li class="fe">Free Wi-Fi</li>
+                <li class="fe">Laundry Services</li>
+                <li class="fe">Common Recreation Areas</li>
+            </ul>
+        </div>
+        <div id="img" class="scroll-animate-fade-in-right"></div>
+    </div>
+
+    <div id="main1" class="scroll-animate">
+        <div id="img1" class="scroll-animate-fade-in-left"></div>
+        <div id="tex1" class="scroll-animate-fade-in-right">
+            <br>
+            <br>
+            <br>
+            <ul id="ll">
+                <li class="fe1">Real-time updates and notifications</li>
+                <li class="fe1">Cafeteria with Affordable Meals</li>
+                <li class="fe">Study Rooms and Quiet Zones</li>
+                <li class="fe">Community Events and Workshops</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main2" class="scroll-animate">
+        <div id="tex2" class="scroll-animate-fade-in-left">
+            <p id="feh2">Student Check-in & Payment Management</p>
+            <ul id="ll">
+                <li class="fe2">Streamlined check-in and check-out process for students</li>
+                <li class="fe2">Flexible payment options for convenience</li>
+                <li class="fe2">Automated tracking of student payments and billing</li>
+            </ul>
+        </div>
+        <div id="img2" class="scroll-animate-fade-in-right"></div>
+    </div>
+
+    <div id="main3" class="scroll-animate">
+        <div id="img3" class="scroll-animate-fade-in-left"></div>
+        <div id="tex3" class="scroll-animate-fade-in-right">
+            <p id="feh3">Student Hostel Features</p>
+            <ul id="ll">
+                <li class="fe3">Individual Study Desks in Rooms</li>
+                <li class="fe3">Access to Recreational Facilities</li>
+                <li class="fe3">Event Spaces for Student Gatherings</li>
+                <li class="fe3">Support Services for Academic Success</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main4">
+        <br>
+        <br>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.scroll-animate').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+    <footer class="footer" id="footer">
+        <div class="footer-info">
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p>123 Yuva Hostel, near valetva chowkdi, nadiaad , kheda , Pincode: 395642</p>
+                <p>Phone: (123) 456-7890 | +91 - 9876543210</p>
+                <p>Email: yuvahosteloffice@gmail.com</p>
+            </div>
+
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="policies">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Yuva Hostel Association. All rights reserved.</p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="index.css">
+</body>
+
+</html>

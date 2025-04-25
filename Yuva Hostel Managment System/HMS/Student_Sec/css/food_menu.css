@@ -1,0 +1,39 @@
+/* food_menu.css */
+
+h1 {
+   font-size: 28px;
+   margin-bottom: 20px;
+   color: #e66c1b;
+   text-align: center;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0;
+   border-radius: 10 px;
+}
+
+table th,
+table td {
+   padding: 12px;
+   border: 1px solid #ddd;
+   text-align: center;
+   border-radius: 10 px;
+
+}
+
+table th {
+   background-color: #e66c1b;
+   font-size: 18px;
+   border-radius: 10 px;
+}
+
+
+table td {
+   font-size: 16px;
+}
+
+table tr:hover {
+   background-color: #a94401;
+}

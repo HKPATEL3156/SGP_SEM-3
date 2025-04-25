@@ -1,0 +1,63 @@
+.bill-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.bill-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.bill-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.bill-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #3028E9;
+    border-radius: 5px;
+}
+
+.bill-form button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #3028E9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bill-form button:hover {
+    background-color: #4A42E9;
+    transform: scale(1.05);
+}
+
+.card {
+    background-color: #1D1F21;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #1b2328;
+}
+
+.card h2 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #B0B0B0;
+}
