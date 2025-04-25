@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFFAEF;
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    justify-content: center;
+    justify-items: center;
+    height: 350px;
+    width: 320px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    border: 1px solid #0f1111;
+    border-radius: 23px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Login {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0f1111;
+    font-size: 24px;
+}
+
+#usernametext, #passwordtext {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #0f1111;
+    margin-bottom: 5px;
+}
+
+#user, #password {
+    margin-bottom: 0px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    margin-bottom: 5px;
+}
+
+#signin {
+    width: 100%;
+    padding: 10px;
+    background-color: #5F68E2;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#signin:hover {
+    background-color: #4e57c7;
+}
+
+#createAccount {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#createAccount a {
+    color: #5F68E2;
+    text-decoration: none;
+}
+
+#createAccount a:hover {
+    text-decoration: underline;
+}

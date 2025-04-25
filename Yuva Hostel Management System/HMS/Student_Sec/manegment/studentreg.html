@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Student</title>
+    <link rel="stylesheet" href="css/dashbord.css">
+    <link rel="stylesheet" href="css/studentreg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="hleft">
+                <img class="logo" src="logor.png" alt="Yuva_Hostel_icon">
+                <h1>Yuva Hostel</h1>
+            </div>
+            <ul class="hright">
+                <li class="icon1"><a href="index.html"><i class="fa-solid fa-user"></i></a></li>
+                <li class="icon2"><a href="dashboard.html"><i class="fa-solid fa-gauge"></i></a></li>
+                <li class="icon3"><a href="food_menu.html"><i class="fa-solid fa-utensils"></i></a></li>
+                <li class="icon4"><a href="notification.html"><i class="fa-solid fa-bell"></i></a></li>
+                <li class="icon5"><a href="logout.html"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <a href="index.html">
+                    <li><i class="fa-solid fa-user"></i> Profile</li>
+                </a>
+                <a href="dashboard.html">
+                    <li><i class="fa-solid fa-gauge"></i> Dashboard</li>
+                </a>
+                <a href="register_student.html">
+                    <li><i class="fa-solid fa-user-plus"></i> Register Student</li>
+                </a>
+                <a href="room_availability.html">
+                    <li><i class="fa-solid fa-bed"></i> Room Availability</li>
+                </a>
+                <a href="daily_expense.html">
+                    <li><i class="fa-solid fa-money-bill-wave"></i> Daily Expense</li>
+                </a>
+                <a href="profit.html">
+                    <li><i class="fa-solid fa-chart-line"></i> Profit</li>
+                </a>
+                <a href="search_student.html">
+                    <li><i class="fa-solid fa-search"></i> Search Student</li>
+                </a>
+                <a href="light_bill.html">
+                    <li><i class="fa-solid fa-lightbulb"></i> Light Bill Calculation</li>
+                </a>
+                <a href="notice_board.html">
+                    <li><i class="fa-solid fa-sticky-note"></i> Notice Board</li>
+                </a>
+                <a href="wifi_management.html">
+                    <li><i class="fa-solid fa-wifi"></i> WiFi Password </li>
+                </a>
+                <a href="students_query.html">
+                    <li><i class="fa-solid fa-question-circle"></i>  Query & Doubt</li>
+                </a>
+                <a href="leave_application.html">
+                    <li><i class="fa-solid fa-file-alt"></i> Leave Application</li>
+                </a>
+                <a href="fees_details.html">
+                    <li><i class="fa-solid fa-money-check"></i> Fees Details</li>
+                </a>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="mcontent">
+            <div class="register-student">
+                <h2>Register Student</h2>
+                <form action="php/register_student.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="photo">Photo:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="father_name">Father's Name:</label>
+                        <input type="text" id="father_name" name="father_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mother_name">Mother's Name:</label>
+                        <input type="text" id="mother_name" name="mother_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="blood_group">Blood Group:</label>
+                        <input type="text" id="blood_group" name="blood_group" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="caste">Caste:</label>
+                        <input type="text" id="caste" name="caste" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="religion">Religion:</label>
+                        <input type="text" id="religion" name="religion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="university">University:</label>
+                        <input type="text" id="university" name="university" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="institute">Institute:</label>
+                        <input type="text" id="institute" name="institute" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Program:</label>
+                        <input type="text" id="program" name="program" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="current_semester">Current Semester:</label>
+                        <input type="text" id="current_semester" name="current_semester" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student_contact">Student Contact No:</label>
+                        <input type="tel" id="student_contact" name="student_contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parent_contact">Parent Contact No:</label>
+                        <input type="tel" id="parent_contact" name="parent_contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergency_contact">Emergency Contact No:</label>
+                        <input type="tel" id="emergency_contact" name="emergency_contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="room_no">Room No:</label>
+                        <input type="tel" id="room_no" name="room_no" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-info">
+                <div class="contact-info">
+                    <h4>Contact Us</h4>
+                    <p>123 Yuva Hostel, near valetva chowkdi, nadiaad, kheda, Pincode: 395642</p>
+                    <p>Phone: (123) 456-7890 | +91 - 9876543210</p>
+                    <p>Email: yuvahosteloffice@gmail.com</p>
+                </div>
+                <div class="quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="policies">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Yuva Hostel Association. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

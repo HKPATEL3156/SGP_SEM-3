@@ -1,0 +1,238 @@
+/* query_or_doubt.css */
+
+.mcontent {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 20px;
+   padding: 20px;
+}
+
+.query-form {
+   background-color: #2C2E30;
+   background-color: #0e0e0f;
+   padding: 2.5rem;
+   border-radius: 20px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+   width: 100%;
+   max-width: 800px;
+   margin: auto;
+   margin-top: 20px;
+}
+
+.query-form h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 25px;
+   color: #FF6600;
+}
+
+.block {
+   margin: 0.5rem 0;
+   width: 100%;
+}
+
+.block input,
+.block textarea {
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 7px;
+   border: 2px solid #aeaeae;
+   background-color: #444648;
+   color: #FFFFFF;
+   margin-top: 0.5rem;
+}
+
+.block textarea {
+   height: 65px;
+}
+
+.block input:focus,
+.block textarea:focus {
+   border-color: #FF6600;
+   outline: none;
+   box-shadow: 0 0 5px #FF6600;
+}
+
+button {
+   padding: 0.75rem 1.5rem;
+   background-color: #FF6600;
+   color: #FFFFFF;
+   border: none;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   margin-top: 1rem;
+}
+
+button:hover {
+   background-color: #FF983F;
+   transform: scale(1.05);
+}
+
+.btn {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 1.5rem;
+}
+
+.btn .block {
+   width: auto;
+}
+
+.btn .block button {
+   background-color: #FF6600;
+   color: #FFFFFF;
+   border: none;
+   border-radius: 25px;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   padding: 0.75rem 1.5rem;
+}
+
+.btn .block button:hover {
+   background-color: #FF983F;
+   transform: scale(1.05);
+}
+
+
+/* query_or_doubt.css */
+
+
+/* query_or_doubt.css */
+
+.query-form {
+   background-color: #2C2E30;
+   background-color: #0e0e0f;
+   padding: 2.5rem;
+   border-radius: 20px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+   width: 100%;
+   max-width: 800px;
+   margin: auto;
+   margin-top: 20px;
+}
+
+.query-form h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 25px;
+   color: #FF6600;
+}
+
+.block {
+   margin: 0.5rem 0;
+   width: 100%;
+   /* display: flex; */
+}
+
+.block input,
+.block textarea {
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 7px;
+   border: 2px solid #aeaeae;
+   background-color: #444648;
+   color: #FFFFFF;
+   margin-top: 0.5rem;
+}
+
+#student_name {
+   width: 79%;
+}
+
+.block textarea {
+   height: 65px;
+}
+
+.block input:focus,
+.block textarea:focus {
+   border-color: #FF6600;
+   outline: none;
+   box-shadow: 0 0 8px #FF6600;
+}
+
+button {
+   padding: 0.75rem 1.5rem;
+   background-color: #FF6600;
+   color: #FFFFFF;
+   border: none;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   margin-top: 1rem;
+}
+
+button:hover {
+   background-color: #FF983F;
+   transform: scale(1.05);
+}
+
+.facility-options {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   margin-top: 1rem;
+}
+
+.facility-options input[type="checkbox"] {
+   margin-right: 10px;
+}
+
+.facility-options label {
+   margin-right: 20px;
+}
+
+#image-block,
+#text-block,
+#recording-block {
+   margin-top: 20px;
+}
+
+.btn {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 1.5rem;
+}
+
+.btn .block {
+   width: auto;
+}
+
+.btn .block button {
+   background-color: #FF6600;
+   color: #FFFFFF;
+   border: none;
+   border-radius: 25px;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   padding: 0.75rem 1.5rem;
+}
+
+.btn .block button:hover {
+   background-color: #FF983F;
+   transform: scale(1.05);
+}
+
+.block input[type="text"],
+.block input[type="date"] {
+   width: 35%;
+   padding: 0.5rem;
+   border-radius: 7px;
+   border: 2px solid #e31919;
+   background-color: #444648;
+   color: #FFFFFF;
+   margin-top: 0.5rem;
+   display: inline-block;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -ms-border-radius: 7px;
+   -o-border-radius: 7px;
+}
+
+.block label {
+   display: inline-block;
+   margin-right: 10px;
+}

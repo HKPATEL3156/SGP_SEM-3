@@ -1,0 +1,141 @@
+.mcontent {
+    grid-area: mcontent;
+    background-color: #2C2E30;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.mcontent:hover {
+    background-color: #444648;
+}
+
+.mcontent h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.mcontent p {
+    line-height: 1.6;
+}
+
+.summary-panel {
+    background-color: #1D1F21;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.summary-panel h2 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.summary-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-details p {
+    margin: 0;
+    color: #B0B0B0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #2C2E30;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-container i {
+    color: #B0B0B0;
+    margin-right: 10px;
+}
+
+#roomSearch {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1D1F21;
+    color: #FFFFFF;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1D1F21;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #444648;
+}
+
+.card i {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.card.available i {
+    color: #28a745; /* Green for available */
+}
+
+.card.occupied i {
+    color: #dc3545; /* Red for occupied */
+}
+
+.card.partially-occupied i {
+    color: #ffc107; /* Yellow for partially occupied */
+}
+
+.card h3 {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.card p {
+    color: #B0B0B0;
+    font-size: 0.9rem;
+}
+
+.card-details {
+    display: none;
+    background-color: #444648;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-details.active {
+    display: block;
+}
+
+.card.highlight {
+    border: 2px solid #FFD700;
+    background-color: #555759;
+}

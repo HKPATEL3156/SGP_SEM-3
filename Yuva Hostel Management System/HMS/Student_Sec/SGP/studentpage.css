@@ -1,0 +1,176 @@
+/* General Styles */
+body, html {
+   font-family: 'Arial', sans-serif;
+   background-color: #F4F6F8;
+   color: #333;
+   margin: 0;
+   padding: 0;
+}
+
+/* Container Layout */
+.container {
+   display: grid;
+   grid-template-areas:
+       "header header"
+       "sidebar mcontent"
+       "footer footer";
+   grid-template-rows: auto 1fr auto;
+   grid-template-columns: 250px 1fr;
+   height: 100vh;
+}
+
+/* Header Styling */
+.header {
+   grid-area: header;
+   background-color: #1A73E8;
+   color: #FFFFFF;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+   font-size: 2.5rem;
+   margin: 0;
+}
+
+.hright li a {
+   color: #FFFFFF;
+   transition: color 0.3s ease;
+}
+
+.hright li a:hover {
+   color: #FFD700;
+}
+
+/* Sidebar Styling */
+.sidebar {
+   grid-area: sidebar;
+   background-color: #333;
+   color: #FFFFFF;
+   padding: 1rem;
+   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+}
+
+.sidebar ul li {
+   background-color: #444;
+   margin-bottom: 10px;
+   padding: 10px;
+   border-radius: 8px;
+   transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+   background-color: #1A73E8;
+}
+
+.sidebar ul li a {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+   color: #FFD700;
+}
+
+/* Main Content Styling */
+.mcontent {
+   grid-area: mcontent;
+   background-color: #FFFFFF;
+   padding: 2rem;
+   overflow-y: auto;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+.footer {
+   grid-area: footer;
+   background-color: #333;
+   color: #FFFFFF;
+   padding: 1rem;
+   text-align: center;
+   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-info {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.footer-bottom {
+   margin-top: 1rem;
+   font-size: 0.8rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+   .container {
+       grid-template-columns: 1fr;
+       grid-template-areas:
+           "header"
+           "mcontent"
+           "sidebar"
+           "footer";
+   }
+
+   .sidebar {
+       margin-top: 1rem;
+   }
+}
+
+/* Header (Navbar) Styling */
+.header {
+   grid-area: header;
+   background-color: #1A73E8; /* Bright Blue for the navbar background */
+   color: #FFFFFF; /* White text for contrast */
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+.header h1 {
+   font-size: 2.5rem;
+   margin: 0;
+   font-weight: bold;
+   color: #FFD700; /* Gold color for the heading to make it stand out */
+}
+
+/* Navbar Icon List */
+.hright {
+   list-style: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+
+.hright li {
+   margin-left: 1rem; /* Spacing between icons */
+}
+
+.hright li a {
+   color: #FFFFFF;
+   font-size: 1.5rem; /* Increased font size for better visibility */
+   text-decoration: none;
+   padding: 0.5rem;
+   transition: background-color 0.3s ease, color 0.3s ease;
+   border-radius: 50%; /* Rounded icons for a modern look */
+}
+
+/* Hover Effects for Navbar Icons */
+.hright li a:hover {
+   background-color: #FFD700; /* Gold background on hover */
+   color: #1A73E8; /* Blue text on hover to invert colors */
+}
+
+/* Active Icon Styling */
+.hright li a.active {
+   background-color: #FF5252; /* Vivid Red background for active icons */
+   color: #FFFFFF;
+}

@@ -1,0 +1,50 @@
+/* notice_board.css */
+
+.content h2 {
+   font-size: 28px;
+   margin-bottom: 20px;
+}
+
+.content p {
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+.mcontent {
+   padding: 20px;
+}
+
+.notice-board {
+   border: 2px solid #e66c1b;
+
+   border-radius: 5px;
+   padding: 15px;
+   margin-bottom: 20px;
+   /* applu transition to the hover effect */
+   transition: background-color 0.3s ease;
+}
+
+.notice-board h2 {
+   color: #e66c1b;
+   margin-bottom: 10px;
+}
+
+.notice p {
+   color: #e66c1b;
+   margin-bottom: 5px;
+}
+
+.notice .date {
+   font-size: 0.8rem;
+   text-align: right;
+}
+
+.notice-board:hover {
+   background-color: #e66c1b;
+}
+
+.notice-board:hover h2,
+.notice-board:hover p,
+.notice-board:hover .date {
+   color: white;
+}

@@ -1,0 +1,99 @@
+/* pay_fees.css */
+
+h2,
+h3 {
+   font-size: 24px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+table {
+   width: 50%;
+   border-collapse: collapse;
+   margin: 20px 0;
+   border-radius: 10 px;
+   margin: 0 auto;
+}
+
+table th,
+table td {
+   padding: 12px;
+   border: 1px solid #ddd;
+   text-align: center;
+   border-radius: 10 px;
+
+}
+
+table th {
+   background-color: #e66c1b;
+   font-size: 18px;
+   border-radius: 10 px;
+}
+
+
+table td {
+   font-size: 16px;
+}
+
+table tr:hover {
+   background-color: #a94401;
+}
+
+form {
+   max-width: 400px;
+   margin: auto;
+}
+
+form label {
+   font-size: 16px;
+   font-weight: bold;
+}
+
+
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap:
+      20px;
+}
+
+label {
+   font-weight: bold;
+}
+
+input,
+select {
+   padding: 10px;
+   border: 1px solid #ff0202;
+   border-radius: 5px;
+   background-color: #242121;
+   color: #fff;
+}
+
+button {
+   padding: 0.75rem 1.5rem;
+   background-color: #FF6600;
+   color: #FFFFFF;
+   border: none;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   margin-top: 1rem;
+}
+
+button:hover {
+   background-color: #FF983F;
+   transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .content {
+      padding: 20px;
+   }
+
+   form {
+      flex-direction: column;
+   }
+}

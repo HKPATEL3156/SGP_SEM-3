@@ -1,0 +1,55 @@
+/* Profile Page Styles */
+.profile {
+    background-color: #2C2E30;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.profile h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+    color: #FF6600;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.profile-details {
+    width: 100%;
+}
+
+.profile-details .form-group {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #444648;
+    border-radius: 10px;
+}
+
+.profile-details .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #FF6600;
+    margin-bottom: 0.5rem;
+}
+
+.profile-details .form-group p {
+    margin: 0;
+    color: #FFFFFF;
+}
